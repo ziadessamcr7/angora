@@ -9,7 +9,27 @@ var quotesArray = [
     "“If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.”"
 ]
 
+var authorArr =[
+    "--Oscar Wilde--",
+    "--Albert Einstein--",
+    "--Marcus Tullius Cicero--",
+    "--William W. Purkey--",
+    "--Dr. Seuss--",
+    "--J.K. Rowling--",
+    "--Albert Camus--",
+    "--Elbert Hubbard--"
+]
+
 function newQuotes() {
      var randomNumber =  Math.trunc(Math.random() * quotesArray.length) 
     document.getElementById('displayQuote').innerHTML = quotesArray[randomNumber]
+
+    console.log(randomNumber)
+}
+
+function author(){
+    var randomNumber2 = Math.trunc(Math.random() * authorArr.length) 
+    document.getElementById('displayAuthor').innerHTML = authorArr[randomNumber2]
+
+    console.log(randomNumber2)
 }
